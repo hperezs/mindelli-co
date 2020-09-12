@@ -8,7 +8,7 @@ const Nav = () => {
 
     return (
         <Container d="flex" flexDir="row" justify="space-between" align="center" p="2rem" border={{ b: "1px solid" }} borderColor="gray500">
-            <Link to="/">
+            <Link to="/mindelli-co">
                 <Icon name="HomeSolid" size="2.5em" color="brand600" />
             </Link>
             <Text tag="h1" textSize="display2" textWeight="300">mindelli & co.</Text>

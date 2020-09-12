@@ -13,10 +13,10 @@ function App() {
                 <Nav />
                 <Cart />
                 <Switch>
-                    <Route exact path='/'>
+                    <Route exact path='/mindelli-co'>
                         <HomePage />
                     </Route>
-                    <Route path='/product/:productId'>
+                    <Route path='/mindelli-co/product/:productId'>
                         <ProductPage />
                     </Route>
                 </Switch>
