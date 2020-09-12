@@ -66,8 +66,8 @@ const Cart = () => {
                 <Text>${checkout.subtotalPrice}</Text>
             </Div>
             <Div d="flex" justify="flex-end">
-                <Anchor href={checkout.webUrl} target="_blank" >
-                    <Button bg="brand600">
+                <Anchor href={checkout.webUrl} target="_blank" style={{ textDecoration: 'none' }} >
+                    <Button bg="brand600" rounded="xs">
                         Checkout
                     </Button>
                 </Anchor>
