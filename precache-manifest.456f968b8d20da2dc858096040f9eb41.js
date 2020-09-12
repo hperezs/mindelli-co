@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "21c49b9b35ccffd2049da121bf4bae98",
+    "revision": "83cd44693957051f06e66877cc5659c5",
     "url": "/mindelli-co/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mindelli-co/static/css/2.b7ede397.chunk.css"
   },
   {
-    "revision": "7ad7fc2d45893e9089fb",
+    "revision": "dee0abf4db4235f752a3",
     "url": "/mindelli-co/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mindelli-co/static/js/2.7c450bee.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7ad7fc2d45893e9089fb",
-    "url": "/mindelli-co/static/js/main.f24460f3.chunk.js"
+    "revision": "dee0abf4db4235f752a3",
+    "url": "/mindelli-co/static/js/main.a23c80e8.chunk.js"
   },
   {
     "revision": "a760a32467e6731cb0d6",

@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/mindelli-co/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/mindelli-co/static/js/main.f24460f3.chunk.js",
-    "main.js.map": "/mindelli-co/static/js/main.f24460f3.chunk.js.map",
+    "main.js": "/mindelli-co/static/js/main.a23c80e8.chunk.js",
+    "main.js.map": "/mindelli-co/static/js/main.a23c80e8.chunk.js.map",
     "runtime-main.js": "/mindelli-co/static/js/runtime-main.bff84659.js",
     "runtime-main.js.map": "/mindelli-co/static/js/runtime-main.bff84659.js.map",
     "static/css/2.b7ede397.chunk.css": "/mindelli-co/static/css/2.b7ede397.chunk.css",
     "static/js/2.7c450bee.chunk.js": "/mindelli-co/static/js/2.7c450bee.chunk.js",
     "static/js/2.7c450bee.chunk.js.map": "/mindelli-co/static/js/2.7c450bee.chunk.js.map",
     "index.html": "/mindelli-co/index.html",
-    "precache-manifest.5f59bf6efd4d2bec508c69e7f4ea687a.js": "/mindelli-co/precache-manifest.5f59bf6efd4d2bec508c69e7f4ea687a.js",
+    "precache-manifest.456f968b8d20da2dc858096040f9eb41.js": "/mindelli-co/precache-manifest.456f968b8d20da2dc858096040f9eb41.js",
     "service-worker.js": "/mindelli-co/service-worker.js",
     "static/css/2.b7ede397.chunk.css.map": "/mindelli-co/static/css/2.b7ede397.chunk.css.map",
     "static/css/main.5ecd60fb.chunk.css.map": "/mindelli-co/static/css/main.5ecd60fb.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.b7ede397.chunk.css",
     "static/js/2.7c450bee.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.f24460f3.chunk.js"
+    "static/js/main.a23c80e8.chunk.js"
   ]
 }
