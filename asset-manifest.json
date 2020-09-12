@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/hperezs.github.io/mindelli-co/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/hperezs.github.io/mindelli-co/static/js/main.5bf6b8df.chunk.js",
+    "main.js.map": "/hperezs.github.io/mindelli-co/static/js/main.5bf6b8df.chunk.js.map",
+    "runtime-main.js": "/hperezs.github.io/mindelli-co/static/js/runtime-main.730cb92c.js",
+    "runtime-main.js.map": "/hperezs.github.io/mindelli-co/static/js/runtime-main.730cb92c.js.map",
+    "static/css/2.b7ede397.chunk.css": "/hperezs.github.io/mindelli-co/static/css/2.b7ede397.chunk.css",
+    "static/js/2.47c011a5.chunk.js": "/hperezs.github.io/mindelli-co/static/js/2.47c011a5.chunk.js",
+    "static/js/2.47c011a5.chunk.js.map": "/hperezs.github.io/mindelli-co/static/js/2.47c011a5.chunk.js.map",
+    "index.html": "/hperezs.github.io/mindelli-co/index.html",
+    "precache-manifest.5e3b943104aa515a92512170fb313f6d.js": "/hperezs.github.io/mindelli-co/precache-manifest.5e3b943104aa515a92512170fb313f6d.js",
+    "service-worker.js": "/hperezs.github.io/mindelli-co/service-worker.js",
+    "static/css/2.b7ede397.chunk.css.map": "/hperezs.github.io/mindelli-co/static/css/2.b7ede397.chunk.css.map",
+    "static/css/main.5ecd60fb.chunk.css.map": "/hperezs.github.io/mindelli-co/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.47c011a5.chunk.js.LICENSE.txt": "/hperezs.github.io/mindelli-co/static/js/2.47c011a5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.730cb92c.js",
+    "static/css/2.b7ede397.chunk.css",
+    "static/js/2.47c011a5.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.5bf6b8df.chunk.js"
+  ]
+}
