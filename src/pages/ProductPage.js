@@ -31,40 +31,49 @@ const ProductPage = () => {
     if (!productIsReady) return <Loading />
 
     return (
-        <Container >
+        <Container>
             <Row>
-                <Col size="1">
-                    {product.images.map(image => (
-                        <Div
-                            bgImg={image.src}
-                            bgSize="cover"
-                            bgPos="center center"
-                            h="6rem"
-                            m={{ t: "2rem" }}
-                            onClick={() => changeSelectedImage(image.src)}
-                            border={(selectedImage === image.src) ? '4px solid' : 'none'}
-                            borderColor='brand500'
-                            key={image.src}
-                        >
-                        </Div>
-                    ))}
+                <Col size={{ xs: "12", md: "1" }}>
+                    <Div d={{xs: "flex"}} flexDir={{xs: "row", md: "column"}} justify={{xs: "space-between"}} m={{t: {xs: "1rem", md: "0"}}}>
+                        {product.images.map(image => (
+                            <Div
+                                bgImg={image.src}
+                                bgSize="cover"
+                                bgPos="center center"
+                                h="6rem"
+                                m={{ t: { xs: "none", md: "2rem" } }}
+                                onClick={() => changeSelectedImage(image.src)}
+                                border={(selectedImage === image.src) ? '4px solid' : 'none'}
+                                borderColor='brand500'
+                                key={image.src}
+                                w={{xs: "5rem", md:"auto"}}
+                            >
+                            </Div>
+                        ))}
+                    </Div>
+
                 </Col>
-                <Col>
+                <Col size={{ xs: "12", md: "5" }}>
                     <Div
                         bgImg={selectedImage}
                         bgSize="cover"
                         bgPos="center center"
-                        h="30rem"
+                        h={{xs: "40vh", md: "30rem"}}
                         m={{ t: "2rem" }}>
                     </Div>
                 </Col>
-                <Col >
-                    <Div m={{ t: "2rem", l: "2rem" }}>
+                <Col size={{ xs: "12", md: "5" }}>
+                    <Div
+                        m={{
+                            t: { xs: "1rem", md: "2rem" },
+                            l: { xs: "none", md: "1rem" }
+                        }}
+                    >
                         <Text tag="h3" textSize="heading" textWeight="400" textColor="black500">{product.title}</Text>
                         <Text tag="h5" textSize="title" textWeight="300" textColor="black400">${product.variants[0].price}</Text>
 
-                        <Text tag="p" textSize="subheader" m={{ t: "4rem", b: "2rem" }}>{product.description}</Text>
-                        <Button bg="brand600" rounded="xs" onClick={() => addItemToCheckout(product.variants[0].id)}>
+                        <Text tag="p" textSize="subheader" m={{ t: {xs: "1rem", md: "4rem"}, b: "2rem" }}>{product.description}</Text>
+                        <Button bg="brand600" rounded="xs" onClick={() => addItemToCheckout(product.variants[0].id)} m={{b: "2rem"}}>
                             Add to cart
                         </Button>
                     </Div>

@@ -13,10 +13,10 @@ const ProductWrapper = styled.div`
 
 export const ProductCard = ({ title, productImage, id, price }) => {
     return (
-        <Col size="3">
+        <Col size={{xs: "6", md:"3"}}>
             <Link to={`/mindelli-co/product/${id}`} style={{ textDecoration: 'none' }}>
                 <Div
-                    p="2rem"
+                    p={{xs: "0.5rem", md: "2rem"}}
                 >
                     <ProductWrapper>
                         <Div
@@ -27,7 +27,7 @@ export const ProductCard = ({ title, productImage, id, price }) => {
                             transition="0.3s"
                         >
                             <Div
-                                h="20rem"
+                                h={{xs: "12rem", md: "20rem"}}
                                 m={{ b: "0.5rem" }}
                                 bgImg={productImage.src}
                                 bgSize="cover"
