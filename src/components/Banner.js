@@ -8,8 +8,8 @@ const Banner = () => {
         <Container >
             <Carousel interval="4000">
                 <Carousel.Item>
-                    <Div
-                        bgImg="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                    <Div 
+                        bgImg="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
                         bgSize="cover"
                         bgPos="center center"
                         h={{xs: "15rem", md: "25rem"}}
@@ -39,7 +39,7 @@ const Banner = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                     <Div
-                        bgImg="https://images.unsplash.com/photo-1523199455310-87b16c0eed11?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                        bgImg="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
                         bgSize="cover"
                         bgPos="center center"
                         h={{xs: "15rem", md: "25rem"}}
