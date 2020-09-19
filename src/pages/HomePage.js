@@ -4,7 +4,7 @@ import { ShopContext } from '../context/shopContext';
 import Banner from '../components/Banner';
 
 const HomePage = () => {
-    const { fetchAllProducts, products } = useContext(ShopContext);
+    const { fetchAllProducts } = useContext(ShopContext);
 
     useEffect(() => {
         fetchAllProducts();
@@ -16,7 +16,7 @@ const HomePage = () => {
     return (
         <>
             <Banner />
-            <ProductList products={products} />
+            <ProductList/>
         </>
     );
 }

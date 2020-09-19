@@ -2,21 +2,26 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Col, Div, Text } from 'atomize';
 import styled from 'styled-components';
+import './animations.css';
 
-const ProductWrapper = styled.div`
+export const ProductCard = ({ title, productImage, id, price, delay }) => {
+
+    const ProductWrapper = styled.div`
     &:hover{
         transform: scale(1.07, 1.07);
     }
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: ${delay}s;
+    animation-fill-mode: backwards;
 `;
 
-
-export const ProductCard = ({ title, productImage, id, price }) => {
     return (
-        <Col size={{xs: "6", md:"3"}}>
+        <Col size={{ xs: "6", md: "3" }}>
             <Link to={`/mindelli-co/product/${id}`} style={{ textDecoration: 'none' }}>
                 <Div
-                    p={{xs: "0.5rem", md: "2rem"}}
+                    p={{ xs: "0.5rem", md: "2rem" }}
                 >
                     <ProductWrapper>
                         <Div
@@ -27,7 +32,7 @@ export const ProductCard = ({ title, productImage, id, price }) => {
                             transition="0.3s"
                         >
                             <Div
-                                h={{xs: "12rem", md: "20rem"}}
+                                h={{ xs: "12rem", md: "20rem" }}
                                 m={{ b: "0.5rem" }}
                                 bgImg={productImage.src}
                                 bgSize="cover"

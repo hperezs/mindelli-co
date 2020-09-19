@@ -28,7 +28,7 @@ const Cart = () => {
                     <Text>Cart is empty</Text>
                     :
                     checkout.lineItems.length === 0 ?
-                        <Text textColor="gray700" m={{l: "2rem"}, {b: "2rem"}}>Your cart is currently empty.</Text>
+                        <Text textColor="gray700" m={{l: "2rem", b: "2rem"}}>Your cart is currently empty.</Text>
                     :
                     checkout.lineItems.map(lineItem => (
                         <Row p="1rem">
