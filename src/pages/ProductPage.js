@@ -54,7 +54,7 @@ const ProductPage = () => {
                                     border={(selectedImage === image.src) ? '4px solid' : 'none'}
                                     borderColor='brand500'
                                     key={image.src}
-                                    w={{ xs: "5rem", md: "auto" }}
+                                    w={{ xs: "4rem", md: "auto" }}
                                 >
                                 </Div>
                             ))}

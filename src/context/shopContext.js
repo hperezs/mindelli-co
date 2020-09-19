@@ -17,6 +17,7 @@ export const ShopProvider = ({ children }) => {
         products: [],
         product: {},
         filteredProducts: [],
+        sortedProducts: [],
         productIsReady: false,
         isCartOpen: false,
         filteredProducts: []
@@ -28,18 +29,28 @@ export const ShopProvider = ({ children }) => {
 
     const [categoryFilters, setCategoryFilters] = useState({});
 
+    const [priceSorter, setPriceSorter] = useState({
+        highToLow: false
+    });
+
     // FOR DEBUGGING / DEVELOPMENT
     useEffect(() => {
         console.log(shopState);
         console.log(categoryFilters);
     }, [shopState, categoryFilters])
 
+    /*
+        Generate a new checkout if there isn't one
+    */
     useEffect(() => {
         localStorage.checkout ? fetchCheckout(localStorage.checkout) : createCheckout();
     }, [])
 
+    /* 
+        Filter product list whenever the filters change
+    */
     useEffect(() => {
-        if (shopState.products.length != 0) {
+        if (shopState.products.length !== 0) {
             if (!categoryFilters.skirtsAreChecked && !categoryFilters.topsAreChecked && !categoryFilters.bottomsAreChecked && !categoryFilters.dressesAreChecked) {
                 setShopState({
                     ...shopState,
@@ -79,8 +90,34 @@ export const ShopProvider = ({ children }) => {
         }
     }, [shopState.products, categoryFilters])
 
+    useEffect(() => {
+        if (shopState.filteredProducts.length !== 0) {
+            if (priceSorter.highToLow) {
+                const sortedProducts = shopState.filteredProducts.sort((a, b) => (parseInt(a.variants[0].price) < parseInt(b.variants[0].price)) ? 1 : -1);
+                setShopState({
+                    ...shopState,
+                    sortedProducts: sortedProducts
+                });
+            } else {
+                const sortedProducts = shopState.filteredProducts.sort((a, b) => (parseInt(a.variants[0].price) > parseInt(b.variants[0].price)) ? 1 : -1);
+                setShopState({
+                    ...shopState,
+                    sortedProducts: sortedProducts
+                });
+            }
+        } else {
+
+        }
+    }, [shopState.filteredProducts, priceSorter])
+
     const updateCategoryFilters = (filters) => {
         setCategoryFilters(filters)
+    }
+
+    const updatePriceSorter = (highToLow) => {
+        setPriceSorter({
+            highToLow: highToLow
+        })
     }
 
     const createCheckout = async () => {
@@ -163,7 +200,7 @@ export const ShopProvider = ({ children }) => {
         <ShopContext.Provider value={{
             ...shopState,
             fetchAllProducts: fetchAllProducts,
-            filteredProducts: shopState.filteredProducts,
+            sortedProducts: shopState.sortedProducts,
             fetchProduct: fetchProduct,
             product: shopState.product,
             productIsReady: shopState.productIsReady,
@@ -174,7 +211,8 @@ export const ShopProvider = ({ children }) => {
             removeItemFromCheckout: removeItemFromCheckout,
             fetchCheckout: fetchCheckout,
             checkout: checkoutState.checkout,
-            updateCategoryFilters: updateCategoryFilters
+            updateCategoryFilters: updateCategoryFilters,
+            updatePriceSorter: updatePriceSorter
         }}>
             {children}
         </ShopContext.Provider>
