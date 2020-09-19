@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/mindelli-co/precache-manifest.9b5fa30aabed20b770fa2a1dc9903072.js"
+  "/mindelli-co/precache-manifest.b6e239c817bd66632e85eff4ae502c9e.js"
 );
 
 self.addEventListener('message', (event) => {

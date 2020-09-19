@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/mindelli-co/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/mindelli-co/static/js/main.eaa39c5c.chunk.js",
-    "main.js.map": "/mindelli-co/static/js/main.eaa39c5c.chunk.js.map",
+    "main.css": "/mindelli-co/static/css/main.980c081f.chunk.css",
+    "main.js": "/mindelli-co/static/js/main.61e8ea0a.chunk.js",
+    "main.js.map": "/mindelli-co/static/js/main.61e8ea0a.chunk.js.map",
     "runtime-main.js": "/mindelli-co/static/js/runtime-main.bff84659.js",
     "runtime-main.js.map": "/mindelli-co/static/js/runtime-main.bff84659.js.map",
     "static/css/2.b7ede397.chunk.css": "/mindelli-co/static/css/2.b7ede397.chunk.css",
-    "static/js/2.7c450bee.chunk.js": "/mindelli-co/static/js/2.7c450bee.chunk.js",
-    "static/js/2.7c450bee.chunk.js.map": "/mindelli-co/static/js/2.7c450bee.chunk.js.map",
+    "static/js/2.548517b0.chunk.js": "/mindelli-co/static/js/2.548517b0.chunk.js",
+    "static/js/2.548517b0.chunk.js.map": "/mindelli-co/static/js/2.548517b0.chunk.js.map",
     "index.html": "/mindelli-co/index.html",
-    "precache-manifest.9b5fa30aabed20b770fa2a1dc9903072.js": "/mindelli-co/precache-manifest.9b5fa30aabed20b770fa2a1dc9903072.js",
+    "precache-manifest.b6e239c817bd66632e85eff4ae502c9e.js": "/mindelli-co/precache-manifest.b6e239c817bd66632e85eff4ae502c9e.js",
     "service-worker.js": "/mindelli-co/service-worker.js",
     "static/css/2.b7ede397.chunk.css.map": "/mindelli-co/static/css/2.b7ede397.chunk.css.map",
-    "static/css/main.5ecd60fb.chunk.css.map": "/mindelli-co/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.7c450bee.chunk.js.LICENSE.txt": "/mindelli-co/static/js/2.7c450bee.chunk.js.LICENSE.txt"
+    "static/css/main.980c081f.chunk.css.map": "/mindelli-co/static/css/main.980c081f.chunk.css.map",
+    "static/js/2.548517b0.chunk.js.LICENSE.txt": "/mindelli-co/static/js/2.548517b0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.bff84659.js",
     "static/css/2.b7ede397.chunk.css",
-    "static/js/2.7c450bee.chunk.js",
-    "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.eaa39c5c.chunk.js"
+    "static/js/2.548517b0.chunk.js",
+    "static/css/main.980c081f.chunk.css",
+    "static/js/main.61e8ea0a.chunk.js"
   ]
 }
