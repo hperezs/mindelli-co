@@ -6,7 +6,7 @@ import '@brainhubeu/react-carousel/lib/style.css';
 const Banner = () => {
     return (
         <Container >
-            <Carousel interval="5000">
+            <Carousel interval="5000" controls={false}>
                 <Carousel.Item>
                     <Div 
                         bgImg="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
@@ -70,8 +70,6 @@ const Banner = () => {
                 </Carousel.Item>
             </Carousel>
         </Container>
-
-
     );
 }
 
