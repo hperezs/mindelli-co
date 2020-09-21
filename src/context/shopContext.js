@@ -1,6 +1,5 @@
 import React, { useState, createContext, useEffect } from 'react';
 import Client from 'shopify-buy';
-import { staticComposeDeep } from 'styletron-react';
 
 require('dotenv').config();
 
@@ -89,7 +88,10 @@ export const ShopProvider = ({ children }) => {
             }
         }
     }, [shopState.products, categoryFilters])
-
+    
+    /*
+        Sort Products by price whenever the sort selection changes
+    */
     useEffect(() => {
         if (shopState.filteredProducts.length !== 0) {
             if (priceSorter.highToLow) {
