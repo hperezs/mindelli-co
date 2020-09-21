@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import ProductPage from './pages/ProductPage';
 import Nav from './components/Nav';
 import Cart from './components/Cart';
+import Footer from './components/Footer';
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                         <ProductPage />
                     </Route>
                 </Switch>
+                <Footer />
             </Router>
         </ShopProvider>
     );

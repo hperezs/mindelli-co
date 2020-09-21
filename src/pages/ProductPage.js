@@ -40,7 +40,7 @@ const ProductPage = () => {
     return (
         <Container>
             <AnimationWrapper>
-                <Row>
+                <Row m={{b: "8rem"}}>
                     <Col size={{ xs: "12", md: "1" }}>
                         <Div d={{ xs: "flex" }} flexDir={{ xs: "row", md: "column" }} justify={{ xs: "space-between" }} m={{ t: { xs: "1rem", md: "0" } }}>
                             {product.images.map(image => (
