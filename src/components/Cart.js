@@ -28,30 +28,30 @@ const Cart = () => {
                     <Text>Cart is empty</Text>
                     :
                     checkout.lineItems.length === 0 ?
-                        <Text textColor="gray700" m={{l: "2rem", b: "2rem"}}>Your cart is currently empty.</Text>
-                    :
-                    checkout.lineItems.map(lineItem => (
-                        <Row p="1rem">
-                    <Col size="3">
-                        <Div
-                            h="4rem"
-                            bgImg={lineItem.variant.image.src}
-                            bgSize="cover"
-                            bgPos="center center"
-                        >
-                        </Div>
-                    </Col>
-                    <Col size="6">
-                        <Text>{lineItem.title}</Text>
-                    </Col>
-                    <Col size="2">
-                        <Text>${lineItem.variant.price}</Text>
-                    </Col>
-                    <Col size="1">
-                        <Anchor onClick={() => removeItemFromCheckout(lineItem.id)}> <Icon name="Cross" color="red" size="20px" /> </Anchor>
-                    </Col>
-                </Row>
-                    ))
+                        <Text textColor="gray700" m={{ l: "2rem", b: "2rem" }}>Your cart is currently empty.</Text>
+                        :
+                        checkout.lineItems.map(lineItem => (
+                            <Row p="1rem">
+                                <Col size="3">
+                                    <Div
+                                        h="4rem"
+                                        bgImg={lineItem.variant.image.src}
+                                        bgSize="cover"
+                                        bgPos="center center"
+                                    >
+                                    </Div>
+                                </Col>
+                                <Col size="6">
+                                    <Text>{lineItem.title}</Text>
+                                </Col>
+                                <Col size="2">
+                                    <Text>${lineItem.variant.price}</Text>
+                                </Col>
+                                <Col size="1">
+                                    <Anchor onClick={() => removeItemFromCheckout(lineItem.id)}> <Icon name="Cross" color="red" size="20px" /> </Anchor>
+                                </Col>
+                            </Row>
+                        ))
                 }
             </Div>
             <Div

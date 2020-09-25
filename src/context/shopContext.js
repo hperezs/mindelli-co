@@ -17,9 +17,12 @@ export const ShopProvider = ({ children }) => {
         product: {},
         filteredProducts: [],
         sortedProducts: [],
+        queriedProducts: [],
         productIsReady: false,
-        isCartOpen: false,
-        filteredProducts: []
+    })
+
+    const [cartState, setCartState] = useState({
+        isCartOpen: false
     })
 
     const [checkoutState, setCheckoutState] = useState({
@@ -31,6 +34,8 @@ export const ShopProvider = ({ children }) => {
     const [priceSorter, setPriceSorter] = useState({
         highToLow: false
     });
+
+    const [query, setQuery] = useState('')
 
     // FOR DEBUGGING / DEVELOPMENT
     useEffect(() => {
@@ -88,7 +93,7 @@ export const ShopProvider = ({ children }) => {
             }
         }
     }, [shopState.products, categoryFilters])
-    
+
     /*
         Sort Products by price whenever the sort selection changes
     */
@@ -110,7 +115,31 @@ export const ShopProvider = ({ children }) => {
         } else {
 
         }
-    }, [shopState.filteredProducts, priceSorter])
+    }, [shopState.filteredProducts, priceSorter]);
+
+    /*
+        Search for products whenever the query chagnes
+    */
+    useEffect(() => {
+        if (shopState.sortedProducts.length !== 0) {
+            if (query !== '') {
+                const newQueriedProducts = shopState.sortedProducts.filter(product => product.title.toLowerCase().includes(query));
+                setShopState({
+                    ...shopState,
+                    queriedProducts: newQueriedProducts
+                })
+            } else {
+                setShopState({
+                    ...shopState,
+                    queriedProducts: shopState.sortedProducts
+                })
+            }
+        }
+    }, [shopState.sortedProducts, query])
+
+    const searchProducts = (query) => {
+        setQuery(query);
+    }
 
     const updateCategoryFilters = (filters) => {
         setCategoryFilters(filters)
@@ -185,15 +214,13 @@ export const ShopProvider = ({ children }) => {
     }
 
     const openCart = () => {
-        setShopState({
-            ...shopState,
+        setCartState({
             isCartOpen: true
         })
     }
 
     const closeCart = () => {
-        setShopState({
-            ...shopState,
+        setCartState({
             isCartOpen: false
         })
     }
@@ -202,11 +229,11 @@ export const ShopProvider = ({ children }) => {
         <ShopContext.Provider value={{
             ...shopState,
             fetchAllProducts: fetchAllProducts,
-            sortedProducts: shopState.sortedProducts,
+            queriedProducts: shopState.queriedProducts,
             fetchProduct: fetchProduct,
             product: shopState.product,
             productIsReady: shopState.productIsReady,
-            isCartOpen: shopState.isCartOpen,
+            isCartOpen: cartState.isCartOpen,
             openCart: openCart,
             closeCart: closeCart,
             addItemToCheckout: addItemToCheckout,
@@ -214,7 +241,8 @@ export const ShopProvider = ({ children }) => {
             fetchCheckout: fetchCheckout,
             checkout: checkoutState.checkout,
             updateCategoryFilters: updateCategoryFilters,
-            updatePriceSorter: updatePriceSorter
+            updatePriceSorter: updatePriceSorter,
+            searchProducts: searchProducts
         }}>
             {children}
         </ShopContext.Provider>

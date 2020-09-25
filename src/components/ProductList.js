@@ -7,17 +7,13 @@ import { ShopContext } from '../context/shopContext';
 import SearchBar from './SearchBar';
 
 const ProductList = () => {
-    const { sortedProducts } = useContext(ShopContext);
+    const { queriedProducts } = useContext(ShopContext);
 
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        setProducts([]);
-    }, [sortedProducts]);
-
-    useEffect(() => {
-        setProducts(sortedProducts);
-    }, [products])
+        setProducts(queriedProducts);
+    }, [queriedProducts])
 
     let animation_delay = 0;
 
@@ -43,7 +39,7 @@ const ProductList = () => {
                 </Row>
                 <Row>
                     {products.map((product) => {
-                        animation_delay = animation_delay + 0.15;
+                        animation_delay = animation_delay + 0.12;
                         return (
                             <ProductCard title={product.title} productImage={product.images[0]} key={product.id} id={product.id} price={product.variants[0].price} delay={animation_delay} />
                         )
