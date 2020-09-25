@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/mindelli-co/static/css/main.980c081f.chunk.css",
-    "main.js": "/mindelli-co/static/js/main.80c96d94.chunk.js",
-    "main.js.map": "/mindelli-co/static/js/main.80c96d94.chunk.js.map",
+    "main.js": "/mindelli-co/static/js/main.393481ac.chunk.js",
+    "main.js.map": "/mindelli-co/static/js/main.393481ac.chunk.js.map",
     "runtime-main.js": "/mindelli-co/static/js/runtime-main.bff84659.js",
     "runtime-main.js.map": "/mindelli-co/static/js/runtime-main.bff84659.js.map",
     "static/css/2.b7ede397.chunk.css": "/mindelli-co/static/css/2.b7ede397.chunk.css",
-    "static/js/2.548517b0.chunk.js": "/mindelli-co/static/js/2.548517b0.chunk.js",
-    "static/js/2.548517b0.chunk.js.map": "/mindelli-co/static/js/2.548517b0.chunk.js.map",
+    "static/js/2.1973dc07.chunk.js": "/mindelli-co/static/js/2.1973dc07.chunk.js",
+    "static/js/2.1973dc07.chunk.js.map": "/mindelli-co/static/js/2.1973dc07.chunk.js.map",
     "index.html": "/mindelli-co/index.html",
-    "precache-manifest.f6e8ca05ddc18bbb3cd0bb43ed0bcf1e.js": "/mindelli-co/precache-manifest.f6e8ca05ddc18bbb3cd0bb43ed0bcf1e.js",
+    "precache-manifest.92f711fb0fd7576b2a2552010291b6b2.js": "/mindelli-co/precache-manifest.92f711fb0fd7576b2a2552010291b6b2.js",
     "service-worker.js": "/mindelli-co/service-worker.js",
     "static/css/2.b7ede397.chunk.css.map": "/mindelli-co/static/css/2.b7ede397.chunk.css.map",
     "static/css/main.980c081f.chunk.css.map": "/mindelli-co/static/css/main.980c081f.chunk.css.map",
-    "static/js/2.548517b0.chunk.js.LICENSE.txt": "/mindelli-co/static/js/2.548517b0.chunk.js.LICENSE.txt"
+    "static/js/2.1973dc07.chunk.js.LICENSE.txt": "/mindelli-co/static/js/2.1973dc07.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.bff84659.js",
     "static/css/2.b7ede397.chunk.css",
-    "static/js/2.548517b0.chunk.js",
+    "static/js/2.1973dc07.chunk.js",
     "static/css/main.980c081f.chunk.css",
-    "static/js/main.80c96d94.chunk.js"
+    "static/js/main.393481ac.chunk.js"
   ]
 }
