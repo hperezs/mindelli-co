@@ -13,7 +13,7 @@ Build files are uploaded in the gh-pages branch for display. To see live site go
 
 
 
-_Known bugs: 
+_Known bugs:_
 
-* Search bar sometimes does not work as expected
-* Opening the cart causes an undesired re-render of the item list component
+* _Search bar sometimes does not work as expected_
+* _Opening the cart causes an undesired re-render of the item list component_
