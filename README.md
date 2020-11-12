@@ -7,3 +7,6 @@ Tools used in this project:
 * react-router
 * Atomize UI
 * Shopify SDK
+
+
+Build files are uploaded in the gh-pages branch for display. To see live site go to: https://hperezs.github.io/mindelli-co/
