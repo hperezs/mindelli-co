@@ -2,8 +2,8 @@ This project was made as a demo for the company Mindelli & Co, LLC. This serves 
 
 Tools used in this project: 
 
--React.js
--React Hooks (useEffect, useState, useContext)
--react-router
--Atomize UI
--Shopify SDK
+*React.js
+*React Hooks (useEffect, useState, useContext)
+*react-router
+*Atomize UI
+*Shopify SDK
