@@ -11,7 +11,9 @@ Tools used in this project:
 
 Build files are uploaded in the gh-pages branch for display. To see live site go to: https://hperezs.github.io/mindelli-co/
 
-Known bugs: 
+
+
+_Known bugs: 
 
 * Search bar sometimes does not work as expected
 * Opening the cart causes an undesired re-render of the item list component
